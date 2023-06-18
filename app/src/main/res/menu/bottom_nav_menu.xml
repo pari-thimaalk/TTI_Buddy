@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/inventorylist"
+        android:title="Inventory"
+        android:icon="@drawable/ic_inventory"/>
+    <item
+        android:id="@+id/loanledger"
+        android:title="Loan Ledger"
+        android:icon="@drawable/ic_loanledger"/>
+    <item
+        android:id="@+id/directissue"
+        android:title="DI/Indent"
+        android:icon="@drawable/ic_directissue"/>
+
+</menu>

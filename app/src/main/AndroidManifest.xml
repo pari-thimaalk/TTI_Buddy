@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.inventory3">
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ttibuddyicon3"
+        android:roundIcon="@drawable/round_ttibuddy"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".inventory.EditorActivity"
+            android:parentActivityName=".MainActivity">
+
+        </activity>
+        <activity android:name=".loanledger.NewLoanActivity"
+            android:parentActivityName=".MainActivity"
+            android:windowSoftInputMode="adjustPan">
+
+        </activity>
+        <activity android:name=".loanledger.LoanDetailActivity"
+            android:parentActivityName=".MainActivity">
+
+        </activity>
+        <activity android:name=".directissue.NewIndentActivity"
+            android:parentActivityName=".MainActivity"
+            android:windowSoftInputMode="adjustPan">
+
+        </activity>
+        <activity android:name=".directissue.IndentDetailActivity"
+            android:parentActivityName=".MainActivity">
+            
+        </activity>
+    </application>
+
+</manifest>
